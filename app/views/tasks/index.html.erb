@@ -1,0 +1,18 @@
+<% if user_signed_in? %>
+  <div class="row centered" >
+    <table class="table table-striped">
+      <div class="col-md-12">
+        <% @tasks.each do |t| %>
+        <tr>
+          <td><%= link_to t.task, t, method: :delete, data: { confirm: 'Task finished?' } %></td>
+        </tr>    
+        <% end %>
+      </div>
+    </table>
+
+  <%= link_to 'New Task', new_task_path, class: "btn btn-link"  %>
+
+<% else %>
+  <%= render 'layouts/partials/landing' %>
+<% end %>
+  </div>
