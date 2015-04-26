@@ -19,4 +19,7 @@ from [Blacktie](http://www.blacktie.co/)
 - Implement Javascript to make task creation & completion interactive
 - Write Privacy Policy
 - Write Terms of Service
+- Add Multilanguagesupport
+- Prepare and deploy to Heroku
+- Put the app on its domain [3tasksaday.io](http://www.3tasksaday.io) 
 - Make a mobile app out of it
