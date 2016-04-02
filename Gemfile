@@ -2,22 +2,24 @@ source 'https://rubygems.org'
 
 gem 'rails', '4.2.5.2'
 
-gem 'sqlite3'                                     # Use sqlite3 as the database for Active Record
+# - DATABASE -
+gem 'mysql2', '~> 0.3.20'                        # MYSQL as the database for Active Record
+
+gem 'sass-rails', '~> 5.0'                       # Use SCSS for stylesheets
+gem 'uglifier', '>= 1.3.0'                       # Use Uglifier as compressor for JavaScript assets
+gem 'coffee-rails', '~> 4.1.0'                   # Use CoffeeScript for .coffee assets and views
+# gem 'therubyracer', platforms: :ruby           # See https://github.com/sstephenson/execjs#readme for more supported runtimes
+gem 'jquery-rails', '~> 4.1'                     # Use jquery as the JavaScript library
+gem 'turbolinks', '~> 2.5', '>= 2.5.3'           # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
+gem 'jbuilder', '~> 2.0'                         # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
+gem 'sdoc', '~> 0.4.0', group: :doc              # bundle exec rake doc:rails generates the API under doc/api.
+# gem 'bcrypt', '~> 3.1.7'                       # Use ActiveModel has_secure_password
+# gem 'unicorn'                                  # Use Unicorn as the app server
+# gem 'capistrano-rails', group: :development    # Use Capistrano for deployment
 
 # - DESIGN -
-gem 'bootstrap-sass', '~> 3.3.6'                 # Bootstrap
-gem 'font-awesome-sass', '~> 4.5'                # Better Icon Font
-gem 'sass-rails', '~> 5.0'                        # Use SCSS for stylesheets
-gem 'uglifier', '>= 1.3.0'                        # Use Uglifier as compressor for JavaScript assets
-gem 'coffee-rails', '~> 4.1.0'                    # Use CoffeeScript for .coffee assets and views
-# gem 'therubyracer', platforms: :ruby            # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-gem 'jquery-rails'                                # Use jquery as the JavaScript library
-gem 'turbolinks'                                  # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
-gem 'jbuilder', '~> 2.0'                          # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem 'sdoc', '~> 0.4.0', group: :doc               # bundle exec rake doc:rails generates the API under doc/api.
-# gem 'bcrypt', '~> 3.1.7'                        # Use ActiveModel has_secure_password
-# gem 'unicorn'                                   # Use Unicorn as the app server
-# gem 'capistrano-rails', group: :development     # Use Capistrano for deployment
+# gem 'bootstrap-sass', '~> 3.3.6'                 # Bootstrap
+# gem 'font-awesome-sass', '~> 4.5'                # Better Icon Font
 
 group :development, :test do
   gem 'byebug', '~> 8.2', '>= 8.2.2'             # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -33,5 +35,11 @@ group :development do
   gem 'letter_opener'                            # Open Mails in Browser instead of sending them
 end
 
-# Devise for Users
-gem 'devise', '~> 3.4.0'
+# - USER MANAGEMENT -
+gem 'devise', '~> 3.5'                           # Devise for User Autentication
+# gem 'omniauth'
+# gem 'omniauth-oauth2'
+# gem 'omniauth-twitter'                         # Login with Twitter
+# gem 'omniauth-facebook'                        # Login with Facebook
+# gem 'omniauth-google-oauth2'                   # Login with Google+
+
