@@ -20,4 +20,8 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  new_task: "New Task"
+  task_finished: "Task finished?"
+  back: "back"
+  task: "Task"
+  create_task: "Create Task"
