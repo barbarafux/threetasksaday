@@ -8,6 +8,10 @@ class TasksController < ApplicationController
   def index
     @tasks = Task.where(user: current_user).order("created_at DESC")
 
+    respond_to do |format|
+      format.html
+    end
+
     #@row_task = Task.find(params[:id])
   end
 
