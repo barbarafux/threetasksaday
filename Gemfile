@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby "2.5.1"
+ruby "2.6.3"
 
 gem 'rails', '5.1.1'
 
@@ -31,7 +31,7 @@ group :development do
   gem 'web-console', '~> 3.5.1'                  # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'spring'                                   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'better_errors', '~> 2.1', '>= 2.1.1'      # Better Error Output
-  gem 'did_you_mean', '~> 1.2.0'                 # puts method corrections into the error message
+  gem 'did_you_mean', '~> 1.3.0'                 # puts method corrections into the error message
   gem 'meta_request', '~> 0.4.0'                 # Supporting gem for Rails Panel (Google Chrome extension for Rails development)
   gem 'powify', '~> 0.9.2'                       # Wrapper for pow
   gem 'letter_opener'                            # Open Mails in Browser instead of sending them
