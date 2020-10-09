@@ -31,3 +31,8 @@
 
 en:
   hello: "Hello world"
+  new_task: "New task"
+  task_finished: "Are you done?"
+  back: "back"
+  task: "Task"
+  create_task: "Create Task"
