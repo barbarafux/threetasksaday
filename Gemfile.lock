@@ -123,7 +123,7 @@ GEM
     orm_adapter (0.5.0)
     powify (0.9.2)
     public_suffix (5.0.0)
-    rack (2.2.3)
+    rack (2.2.4)
     rack-contrib (2.2.0)
       rack (~> 2.0)
     rack-test (1.1.0)
